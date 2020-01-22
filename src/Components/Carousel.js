@@ -34,7 +34,7 @@ class Carousel extends React.Component{
                 {
                     id: 2,
                     title: 'Projects',
-                    subTitle: 'Some stuff I have made :)',
+                    subTitle: 'Some stuff I have made ',
                     imgSrc: proj,
                     link: './case-studies',
                     selected: false

@@ -1,9 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-//cross origin resource share
 const cors = require('cors');
 
 const sendGrid = require('@sendGrid/mail');
+
+const port = process.env.PORT || 3050
 
 
 const app = express();
@@ -25,11 +26,12 @@ app.get('/api', (req,res,next) => {
 
 app.post('/api/email', (req, res, next) => {
 
+    console.log(req.body);
 
-    sendGrid.setApiKey('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')        
+    sendGrid.setApiKey('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');        
 
     const msg= {
-        to: 'aaprod989@gmail.com',
+        to: 'anotheraprod@gmail.com',
         from: req.body.email,
         subject: 'Contact ArshdeepG',
         text: req.body.message
@@ -40,6 +42,7 @@ app.post('/api/email', (req, res, next) => {
 
         res.status(200).json({
             success: true
+            
         });
 
     })
@@ -53,5 +56,5 @@ app.post('/api/email', (req, res, next) => {
     });
 });
 
-
-app.listen(3030, '0.0.0.0');
+app.listen(port, () => console.log('server started on port', port))
+//app.listen(3050, '0.0.0.0');

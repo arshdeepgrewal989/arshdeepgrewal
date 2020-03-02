@@ -25,6 +25,13 @@ code {
   box-shadow: 0px 0px 3px 1px #ccc;
 }
 
+.g-block-image{
+  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+  box-shadow: 0px 0px 3px 1px #ccc;
+}
+
 .g-card-info{
   margin-top: 10px;
   min-height: 100px;

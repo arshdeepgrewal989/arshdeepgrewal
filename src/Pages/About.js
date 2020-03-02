@@ -12,7 +12,7 @@ function About(props){
             <Content>
                 <p>Hi there, thank you for visiting my website! 
                     My name is Arshdeep G. and I am currently a 3rd-year 
-                    computer science student at Wilfred Laurier University.</p>
+                    computer science student at Wilfrid Laurier University.</p>
                 <p> </p>
                 <p> My interests lie in the intersection of computer science 
                     and business. I love to complete projects because the knowledge
